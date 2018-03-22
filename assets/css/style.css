@@ -1,0 +1,47 @@
+body {
+    background-image: url(../images/background.jpg);
+}
+
+.jumbotron {
+    background-image: url(../images/trainImage.jpg);
+   
+}
+
+h1,
+p {
+    color: darkgoldenrod;
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+p {
+    font-size: 20px;
+}
+
+#formBG {
+    background-image: url(../images/trainImage2.jpg);
+    color: darkgoldenrod;
+    border: darkslategrey;
+    border-width: 10px;
+}
+
+.card-header {
+    background-color: darkslategrey;
+    color: darkgoldenrod;
+}
+
+#tableBG {
+    background-image: url(../images/trainImage3.jpg);
+    color: darkgoldenrod;
+}
+
+#submitBtn {
+    background-color: darkgoldenrod;
+    color: darkslategrey;
+    font-weight: bolder;
+}

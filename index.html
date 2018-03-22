@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- reset -->
+    <!-- <link type="text/css" rel="stylesheet" href="assets/css/reset.css"> -->
+
+    <!-- boostrap heading -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- my own css -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <!-- Moment -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+    <!-- create overall container -->
+    <div class="container">
+        <!-- create jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1>Steampunk Express</h1>
+                <p>Come for the steam, stay for the punk</p>
+            </div>
+        </div>
+
+        <!-- create card, then table -->
+        <div class="card" id="tableBG">
+            <div class="card-header">Current Train Schedule</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody id="trainData">
+                    <!-- <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+
+                        </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div class="card-body">
+
+        </div>
+
+
+        <!-- create card, then form, submit button -->
+        <div class="card">
+            <div class="card-header">Add Train</div>
+            <div class="card-body" id="formBG">
+                <form>
+                    <div class="form-group">
+                        <label for="trainNameInput">Train Name</label>
+                        <input type="text" class="form-control" id="trainName">
+                    </div>
+                    <div class="form-group">
+                        <label for="destinationInput">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequencyInput">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstTrainInput">First Train Time</label>
+                        <input type="text" class="form-control" id="firstTrainDate" placeholder="HH:mm - military time">
+                    </div>
+
+
+                    <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="card-body">
+
+        </div>
+    </div>
+    <!-- end of overall container -->
+
+    <!-- my own JS -->
+    <script src="assets/javascript/javascript.js"></script>
+
+    <!-- boostrap minus jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
